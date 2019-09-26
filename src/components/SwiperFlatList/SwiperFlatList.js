@@ -142,10 +142,10 @@ const SwiperFlatList = React.forwardRef(
     }, [paginationIndex]);
     const _onMomentumScrollEnd = e => {
       // NOTE: Method not executed when call "flatListElement?.current?.scrollToIndex"
-      if (ignoreOnMomentumScrollEnd) {
+      /*(if (ignoreOnMomentumScrollEnd) {
         setIgnoreOnMomentumScrollEnd(false);
         return;
-      }
+      }*/
 
       onMomentumScrollEnd?.({ index: paginationIndex }, e);
 
